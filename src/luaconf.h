@@ -177,7 +177,9 @@
 ** non-conventional directories.
 */
 
+#ifndef LUA_VDIR
 #define LUA_VDIR LUA_VERSION_MAJOR "." LUA_VERSION_MINOR
+#endif
 #if defined(_WIN32) /* { */
 /*
 ** In Windows, any exclamation mark ('!') in the path is replaced by the
